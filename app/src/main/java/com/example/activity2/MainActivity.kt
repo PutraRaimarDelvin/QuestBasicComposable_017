@@ -49,7 +49,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
 @Composable
 fun BasicCompose(koko: Modifier = Modifier) {
     Column(
@@ -64,7 +63,6 @@ fun BasicCompose(koko: Modifier = Modifier) {
                     color = Color.Yellow,
                     offset = Offset(4f, 4f),
                     blurRadius = 8f
-
                 )
             )
         )
@@ -85,13 +83,13 @@ fun BasicCompose(koko: Modifier = Modifier) {
                     offset = Offset(4f, 4f),
                     blurRadius = 8f
                 )
-            )
-        )
+            ))
         Box(
             modifier = koko
                 .size(430.dp),
             contentAlignment = Alignment.Center
         ) {
+
             Image(
                 painter = painterResource(id = R.drawable.delvin),
                 contentDescription = null,
@@ -99,9 +97,23 @@ fun BasicCompose(koko: Modifier = Modifier) {
                     .size(400.dp)
                     .clip(RectangleShape),
                 contentScale = ContentScale.Crop
+            )
         }
+    }
+}
 
+@Composable
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
+}
 
-
-
-
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    Activity2Theme{
+        Greeting("Android")
+    }
+}
