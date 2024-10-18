@@ -62,6 +62,8 @@ fun BasicCompose(koko: Modifier = Modifier) {
             style = TextStyle(
                 shadow = Shadow(
                     color = Color.Yellow,
+                    offset = Offset(4f, 4f),
+                    blurRadius = 8f
     }
 
 
