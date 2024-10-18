@@ -64,6 +64,11 @@ fun BasicCompose(koko: Modifier = Modifier) {
                     color = Color.Yellow,
                     offset = Offset(4f, 4f),
                     blurRadius = 8f
+
+                )
+            )
+        )
+        Text(text = "Ini Halaman Login", fontSize = 16.sp, fontStyle = FontStyle.Italic)
     }
 
 
