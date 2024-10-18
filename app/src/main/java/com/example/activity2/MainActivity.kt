@@ -50,58 +50,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 @Composable
-fun BasicCompose(koko: Modifier = Modifier) {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(6.dp),
-        verticalArrangement = Arrangement.spacedBy(2.dp),
-        horizontalAlignment = Alignment.CenterHorizontally){
-        Text(text = "Login", fontSize = 30.sp, fontWeight = FontWeight.Bold,
-            style = TextStyle(
-                shadow = Shadow(
-                    color = Color.Yellow,
-                    offset = Offset(4f, 4f),  // Mengatur offset shadow
-                    blurRadius = 8f  // Mengatur seberapa buram bayangan
-                )
-            )
-        )
-        Text(text = "Ini Halaman Login", fontSize = 16.sp, fontStyle = FontStyle.Italic)
-        Image(painter = painterResource(id = R.drawable.umy),
-            contentDescription = null,
-            modifier = Modifier
-                .size(200.dp)
-                .padding(top = 20.dp)
-        )
-        Text(text = "Nama", fontSize =25.sp)
-        Text(text = "Putra Raimmar Delvin", fontSize =30.sp, fontWeight = FontWeight.Bold, color = Color.Black)
-        Text(text = "20220140017", fontSize = 25.sp,
-            style = TextStyle(
-                shadow = Shadow(
-                    color = Color.Yellow,
-                    offset = Offset(4f, 4f),  // Mengatur offset shadow
-                    blurRadius = 8f  // Mengatur seberapa buram bayangan
-                )
-            ))
-        Box(
-            modifier = koko
-                .size(430.dp),
-            contentAlignment = Alignment.Center  // Mengatur konten di tengah
-        ) {
-
-            Image(
-                painter = painterResource(id = R.drawable.delvin),
-                contentDescription = null,
-                modifier = koko
-                    .size(400.dp)
-                    .clip(RectangleShape),
-                contentScale = ContentScale.Crop
-            )
-        }
-    }
-}
-
-@Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
