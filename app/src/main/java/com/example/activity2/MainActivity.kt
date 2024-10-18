@@ -60,6 +60,7 @@ fun BasicCompose(koko: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally){
         Text(text = "Login", fontSize = 30.sp, fontWeight = FontWeight.Bold,
             style = TextStyle(
+                shadow = Shadow(
     }
 
 
