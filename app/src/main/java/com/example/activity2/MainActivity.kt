@@ -61,6 +61,7 @@ fun BasicCompose(koko: Modifier = Modifier) {
         Text(text = "Login", fontSize = 30.sp, fontWeight = FontWeight.Bold,
             style = TextStyle(
                 shadow = Shadow(
+                    color = Color.Yellow,
     }
 
 
