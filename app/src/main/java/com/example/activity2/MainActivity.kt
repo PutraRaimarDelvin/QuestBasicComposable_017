@@ -92,6 +92,12 @@ fun BasicCompose(koko: Modifier = Modifier) {
                 .size(430.dp),
             contentAlignment = Alignment.Center
         ) {
+            Image(
+                painter = painterResource(id = R.drawable.delvin),
+                contentDescription = null,
+                modifier = koko
+                    .size(400.dp)
+        }
 
 
 
