@@ -58,4 +58,8 @@ fun BasicCompose(koko: Modifier = Modifier) {
             .padding(6.dp),
         verticalArrangement = Arrangement.spacedBy(2.dp),
         horizontalAlignment = Alignment.CenterHorizontally){
+        Text(text = "Login", 
+    }
+
+
 
