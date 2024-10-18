@@ -76,7 +76,7 @@ fun BasicCompose(koko: Modifier = Modifier) {
                 .padding(top = 20.dp)
         )
         Text(text = "Nama", fontSize =25.sp)
-        Text(text = "Putra Raimmar Delvin", fontSize =30.sp, fontWeight = FontWeight.Bold,
+        Text(text = "Putra Raimmar Delvin", fontSize =30.sp, fontWeight = FontWeight.Bold, color = Color.Black)
 
     }
 
