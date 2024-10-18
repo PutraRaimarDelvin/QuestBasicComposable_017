@@ -74,6 +74,9 @@ fun BasicCompose(koko: Modifier = Modifier) {
             modifier = Modifier
                 .size(200.dp)
                 .padding(top = 20.dp)
+        )
+        Text(text = "Nama", fontSize =25.sp)
+
     }
 
 
