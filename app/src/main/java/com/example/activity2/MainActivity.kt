@@ -82,11 +82,17 @@ fun BasicCompose(koko: Modifier = Modifier) {
             style = TextStyle(
                 shadow = Shadow(
                     color = Color.Yellow,
-                    offset = Offset(4f, 4f),  // Mengatur offset shadow
-                    blurRadius = 8f  // Mengatur seberapa buram bayangan
+                    offset = Offset(4f, 4f),
+                    blurRadius = 8f
                 )
+            )
+        )
+        Box(
+            modifier = koko
+                .size(430.dp),
+            contentAlignment = Alignment.Center
+        ) {
 
-    }
 
 
 
