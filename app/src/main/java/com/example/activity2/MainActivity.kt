@@ -50,3 +50,12 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Composable
+fun BasicCompose(koko: Modifier = Modifier) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(6.dp),
+        verticalArrangement = Arrangement.spacedBy(2.dp),
+        horizontalAlignment = Alignment.CenterHorizontally){
+
