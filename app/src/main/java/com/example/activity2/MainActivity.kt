@@ -70,6 +70,10 @@ fun BasicCompose(koko: Modifier = Modifier) {
         )
         Text(text = "Ini Halaman Login", fontSize = 16.sp, fontStyle = FontStyle.Italic)
         Image(painter = painterResource(id = R.drawable.umy),
+            contentDescription = null,
+            modifier = Modifier
+                .size(200.dp)
+                .padding(top = 20.dp)
     }
 
 
