@@ -97,6 +97,8 @@ fun BasicCompose(koko: Modifier = Modifier) {
                 contentDescription = null,
                 modifier = koko
                     .size(400.dp)
+                    .clip(RectangleShape),
+                contentScale = ContentScale.Crop
         }
 
 
