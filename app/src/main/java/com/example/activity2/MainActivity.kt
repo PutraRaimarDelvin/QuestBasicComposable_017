@@ -78,6 +78,14 @@ fun BasicCompose(koko: Modifier = Modifier) {
         Text(text = "Nama", fontSize =25.sp)
         Text(text = "Putra Raimmar Delvin", fontSize =30.sp, fontWeight = FontWeight.Bold, color = Color.Black)
 
+        Text(text = "20220140017", fontSize = 25.sp,
+            style = TextStyle(
+                shadow = Shadow(
+                    color = Color.Yellow,
+                    offset = Offset(4f, 4f),  // Mengatur offset shadow
+                    blurRadius = 8f  // Mengatur seberapa buram bayangan
+                )
+
     }
 
 
